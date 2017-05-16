@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/djdaquin/characterscramble.com/issues"
   },
-  "homepage": "https://github.com/djdaquin/characterscramble.com#readme"
+  "homepage": "https://github.com/djdaquin/characterscramble.com#readme",
+  "dependencies": {
+    "react": "^15.5.4"
+  }
 }
