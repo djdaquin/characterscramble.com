@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/djdaquin/characterscramble.com#readme",
   "dependencies": {
-    "react": "^15.5.4"
+    "express": "^4.15.2",
+    "react": "^15.5.4",
+    "sequelize": "^3.30.4"
   }
 }
