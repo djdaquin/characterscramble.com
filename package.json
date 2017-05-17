@@ -27,5 +27,8 @@
     "redux-thunk": "^2.2.0",
     "sequelize": "^3.30.4",
     "webpack": "^2.5.1"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.4.0"
   }
 }
