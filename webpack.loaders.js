@@ -3,7 +3,7 @@ module.exports = [
     test: /\.jsx?$/,
     exclude: /(node_modules|bower_components|public\/)/,
     loader: "babel-loader",
-    query: { presets: ['react'] }
+    query: { presets: ['react', 'es2015'] }
   },
   {
     test: /\.css$/,
