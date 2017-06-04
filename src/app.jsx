@@ -4,7 +4,8 @@ import '../styles/index.scss';
 
 import Home from './home.jsx';
 
-import HelloWorld from './Testing.jsx';
+import TitleBar from './title.jsx';
+import Sidebar from './sidebar.jsx';
 
 // routing component
 import {
@@ -19,11 +20,11 @@ export default class App extends React.Component {
   render() {
     return(
       <div>
-        <HelloWorld />
+        <TitleBar />
+        <Sidebar />
         <Router>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/test" component={HelloWorld}/>
           </Switch>
         </Router>
       </div>
