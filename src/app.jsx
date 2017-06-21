@@ -1,6 +1,7 @@
 
 import React from 'react';
 import '../styles/index.scss';
+import bootstrap from 'bootstrap';
 
 import Home from './home.jsx';
 

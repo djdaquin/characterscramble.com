@@ -60,5 +60,9 @@ module.exports = {
         js: [ "bundle.js"],
       }
     }),
+    new webpack.ProvidePlugin({
+       $: "jquery",
+       jQuery: "jquery"
+    }),
   ]
 };
