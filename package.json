@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
-    "start": "webpack-dev-server --progress --profile --colors",
+    "start-dev": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
-    "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors"
+    "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,11 @@
   },
   "homepage": "https://github.com/djdaquin/characterscramble.com#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
     "jquery": "^3.2.1",
+    "morgan": "^1.8.2",
     "node-sass": "^4.3.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
