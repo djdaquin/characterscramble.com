@@ -36,6 +36,7 @@
         "no-unused-vars": 0
     },
     "globals": {
-      "process": 1
+      "process": 1,
+      "__dirname": 1
     }
 }
