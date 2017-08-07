@@ -4,6 +4,7 @@ import '../styles/index.scss';
 import bootstrap from 'bootstrap';
 
 import Home from './home.jsx';
+import Test from './test.jsx';
 
 import TitleBar from './title.jsx';
 import Sidebar from './sidebar.jsx';
@@ -26,6 +27,7 @@ export default class App extends React.Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home}/>
+            <Route exact path="/hello" component={Test}/>
           </Switch>
         </Router>
       </div>

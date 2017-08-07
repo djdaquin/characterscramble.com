@@ -1,10 +1,13 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const apiRouter = require('./api/apiRouter.js');
 
 var app = express();
+app.use(express.static('public'));
+app.use(express.static('node_modules'));
 
 // Log requests to the console.
 app.use(logger('dev'));
@@ -20,8 +23,8 @@ console.log(PORT);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 app.listen(PORT, function () {

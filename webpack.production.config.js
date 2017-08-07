@@ -17,7 +17,7 @@ module.exports = {
     './styles/index.scss'
   ],
   output: {
-    publicPath: './',		
+    publicPath: './',
     path: path.join(__dirname, 'public'),
     filename: '[chunkhash].js'
   },
@@ -53,6 +53,10 @@ module.exports = {
         css: ['style.css'],
         js: ['bundle.js'],
       }
-    })
+    }),
+    new webpack.ProvidePlugin({
+       $: "jquery",
+       jQuery: "jquery"
+    }),
   ]
 };
